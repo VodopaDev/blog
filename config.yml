@@ -1,0 +1,201 @@
+baseURL: 'https://innerli.ch/'
+title: 'Nicolas Jomeau''s Blog'
+paginate: 1
+theme: hugo-profile
+
+languageCode: 'en-us'
+defaultContentLanguage: en
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+# Site parameters
+params:
+  title: 'Nicolas Jomeau''s Blog'
+  favicon: "/svgs/spider_graph.svg"
+
+  UseBootstrapCDN: true
+
+  font:
+    fontSize: 1.1rem # default: 1rem
+    fontWeight: 400 # default: 400
+    lineHeight: 1.5 # default: 1.5
+    textAlign: left # default: left
+
+
+  navbar:
+    align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+    # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
+    showBrandLogo: true # Show brand logo in nav bar | default is true
+    #brandName: "N. Jomeau" # Brand name for the brand | default is the title variable
+    disableSearch: true
+    stickyNavBar:
+      enable: true
+      showOnScrollUp: true
+
+  hero:
+    enable: true
+    title: "Nicolas Jomeau"
+    subtitle: "Handling data"
+    content: |-
+      Switzerland-based **full stack Data Engineer** with complementary skills
+      in **DevOps**, Cloud **infrastructure** management, and **software development**.
+      In love with up-to-date data documentation and quality monitoring.
+    image: /profile.jpg
+    roundImage: true
+    bottomImage:
+      enable: false
+    button:
+      enable: true
+      name: "Resume"
+      url: "/nicolas_jomeau_data_eng_resume.pdf"
+      download: true
+      newPage: false
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://github.com/VodopaDev
+        - icon: fab fa-linkedin
+          url: https://www.linkedin.com/in/nicolas-jomeau/
+        - icon: fas fa-envelope
+          url: mailto:nicolas.jomeau@protonmail.com
+
+  about:
+    enable: true
+    title: "About"
+
+    content: |-
+      I am a Data Engineer with a passion for databases and datawarehousing. I have
+      worked on multiple client's projects on both **AWS** and **Azure** clouds. Currently working at [**ELCA**](https://www.elca.ch/en).
+
+      My skills includes the **design**, **development**, and **maintenance** of data analytics
+      platforms on **Databricks**, **Snowflake**, **Azure Synapse** and **AWS Glue** ETL/lake/warehouse
+      solutions with strong knowledge of data processing techniques using **Spark**
+      (Scala/Python) and **SQL**. 
+
+      I also cover the full lifecycle of a platform with supporting skills in infrastructure
+      management using **Terraform**, code and infrastructe **CI/CD** on Azure DevOps, and general
+      software development in **Python** and **Scala**.
+
+      Currently learning **Rust** and developing toy programs with Terminal-based user interfaces.
+
+    skills:
+      enable: true
+      items:
+        - "Azure"
+        - "AWS"
+        - "Snowflake"
+        - "Databricks"
+        - "Azure Synapse"
+        - "Python"
+        - "Scala"
+        - "SQL"
+        - "Spark"
+        - "Terraform"
+
+  experience:
+    enable: true
+    items:
+    - job: "Data Engineer / DevOps Engineer"
+      company: "ELCA"
+      companyUrl: "https://www.elca.ch/en"
+      date: "September 2021 - Present"
+      content: |-
+        Current employer. I have been working on various projects ranging from Cloud infrastructure
+        management to Data Platform design, development, and maintenance. I also participated in setting
+        the good practices in the team for newer tools that we used and kept up-to-date with the release
+        of new data-related and major updates of existing tools.  
+
+        Clients included a cantonal bank, a multinational NGO, the Swiss Confederation, a major postal
+        service, 2 world-class hospitality schools, and some biopharmaceutical, chemical and construction companies.
+      # featuredLink:
+      #   enable: true
+      #   name: "Overview and Keypoints of client's projects"
+    - job: "Scala Teaching Assistant"
+      company: "EPFL"
+      companyUrl: "https://www.epfl.ch/en/"
+      date: "September 2019 - August 2020"
+      content: |-
+        Moderating the online Scala learning platform and teaching attendees on Scala's expressiveness,
+        quirks, and footguns.
+    - job: "Intern"
+      company: "Mirabaud"
+      companyUrl: "https://www.mirabaud.com/en/"
+      date: "June 2017 - July 2017"
+      content: |-
+        Brainstorming to find ways to raise attractiveness of Mirabaud bank to a younger clientele,
+        while attending courses, conferences and workshops held by internal and external experts
+        about finance in the Mirabaud Group.
+
+  # Achievements
+  achievements:
+    enable: true
+    title: "Certifications"
+    items:
+      - title: "Microsoft: Azure Administrator Associate"
+        content: >
+          I have the skills and knowledge to implement, manage, and monitor an organization’s
+          Azure tenant.
+        url: https://www.credly.com/badges/c271d0b3-4fb9-4456-a98d-ead60e873f86/linked_in_profile
+        image: /certifications/azure_administrator_associate.png
+      - title: "Snowflake: SnowPro Core"
+        content: >
+          I have the ability design, develop and manage secure, scalable Snowflake solutions to drive
+          business objectives.
+        url: "https://www.credly.com/badges/784ff4b8-104b-4aff-a4d0-7de310d2291b/linked_in_profile"
+        image: /certifications/snowpro_core.png
+      - title: "AWS: Cloud Essentials"
+        content: >
+          I have developed knowledge of main AWS Cloud concepts like AWS Compute, Storage, Networking
+          and Database, security, architecture, pricing, and support.
+        url: "https://www.credly.com/badges/19d1e14d-8470-420b-bd61-fffb9a494cfb/linked_in_profile"
+        image: /certifications/aws_cloud_essentials.png
+  
+  # Education
+  education:
+    enable: true
+    # title: "Custom Name"
+    index: false
+    items:
+      - title: "Master in Data Science"
+        school:
+          name: "École Polytechnique Fédérale de Lausanne (EPFL), Lausanne"
+          url: "https://www.epfl.ch/en/"
+        date: "2019 - 2022"
+        grade: "5.35/6.00"
+        content: |-
+          - Master Thesis on document noise correction and distortion recovery with synthetically trained **deep learning** models for content detection and extraction.
+          - Development of a Python multi-threaded, proxy/TOR-hidden **scrapper** to extract a 130GB dataset from a major beer-tasting social platform.
+          - Event organization for exchange students at the **Erasmus Student Network (ESN)** association.
+      - title: "Bachelor in Computer Science"
+        school:
+          name: "École Polytechnique Fédérale de Lausanne (EPFL), Lausanne"
+          url: "https://www.epfl.ch/en/"
+        date: "2016 - 2019"
+        grade: "5.00/6.00"
+        content: |-
+          Bachelor semester project for displaying HDR image on Android phone. The project included
+          **development of an Android app** on Java, working on various tonemapping algorithms,
+          and integrating the JPEG XL encoder/decoder (in C) to the Java environment using NDK. 
+
+          A demo was showcased to the **JPEG committee**.
+        # featuredLink:
+        #   enable: true
+        #   name: "My academic record"
+        #   url: "https://example.com"
+
+  #Contact
+  contact:
+    enable: true
+    title: "Contact"
+    content: |-
+      My inbox is always open. If you have any question or just  
+      want to get in touch I'll happily answer your emails 😊
+    btnName: ✉
+    btnLink: mailto:nicolas.jomeau@protonmail.com
