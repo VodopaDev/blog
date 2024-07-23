@@ -1,5 +1,5 @@
 # The Blog
-Welcome to the code/config for my personnal blog.  
+Welcome to the code/config for my personal blog.  
 
 The tech stack is kept as simple as possible by known tech stack such as the [Hugo](https://gohugo.io/) static-website generator with the [hugo-profile](https://github.com/gurusabarish/hugo-profile/tree/master) theme, and a GitHub Actions pipeline to build the static files and deploy  host on GitHub pages (with redirect from my custom domain).  
 
